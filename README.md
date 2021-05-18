@@ -36,13 +36,20 @@ The script will fetch the texts and create two new files, one for sarcastic and 
 Kindly cite the paper using the following BibTex entry:
 
 ```
-@inproceedings{
-    shmueli:reactive-supervision, 
-    title={Reactive Supervision: A New Method for Collecting Sarcasm Data}, 
-    author={Shmueli, Boaz and Ku, Lun-Wei and Ray, Soumya}, 
-    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing", 
-    year = "2020", 
-    publisher = "Association for Computational Linguistics"
+@inproceedings{shmueli-etal-2020-reactive,
+    title = "{R}eactive {S}upervision: {A} {N}ew {M}ethod for {C}ollecting {S}arcasm {D}ata",
+    author = "Shmueli, Boaz  and
+      Ku, Lun-Wei  and
+      Ray, Soumya",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.emnlp-main.201",
+    doi = "10.18653/v1/2020.emnlp-main.201",
+    pages = "2553--2559",
+    abstract = "Sarcasm detection is an important task in affective computing, requiring large amounts of labeled data. We introduce reactive supervision, a novel data collection method that utilizes the dynamics of online conversations to overcome the limitations of existing data collection techniques. We use the new method to create and release a first-of-its-kind large dataset of tweets with sarcasm perspective labels and new contextual features. The dataset is expected to advance sarcasm detection research. Our method can be adapted to other affective computing domains, thus opening up new research opportunities.",
 }
 ```
 
