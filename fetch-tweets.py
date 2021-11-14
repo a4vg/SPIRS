@@ -16,7 +16,7 @@ def fetch_ids(ids):
   tweets = []
   for idx, id_list in enumerate(id_lists):
     print('{}.'.format(len(id_lists) - idx), flush=True, end='')
-    tweets.extend([tweet for tweet in api.statuses_lookup(id_list, tweet_mode='extended')])
+    tweets.extend([tweet for tweet in api.lookup_statuses(id_list, tweet_mode='extended')])
   print()
   return tweets
 
@@ -48,7 +48,6 @@ if __name__ == "__main__":
     exit(1)
   auth = tweepy.AppAuthHandler(CONSUMER_KEY , CONSUMER_SECRET)
   api = tweepy.API(auth, wait_on_rate_limit=True,
-                        wait_on_rate_limit_notify=True,
                         retry_count=10, retry_delay=60,
                         retry_errors=[400] + list(range(402,599)))
   print('This can take some time, so make yourself a cup of Taiwanese oolong tea and let the magic happen!')
